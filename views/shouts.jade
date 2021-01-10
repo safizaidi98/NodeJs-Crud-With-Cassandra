@@ -1,0 +1,8 @@
+extends layout
+block content
+    h1 Shouts
+    ul
+        each shout, i in shouts
+            li <strong>
+                #{shout.username} : </strong>
+                  #{shout.body}

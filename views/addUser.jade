@@ -1,0 +1,18 @@
+extends layout
+block content
+    h1 Add User
+    form#formAddUser(name = 'adduser', method= 'post', action ='/addUser')
+        div
+            input#inputUserName(type = 'text', placeholder = 'Enter User Name', name = 'username') 
+        div
+            input#inputPassword(type = 'password', placeholder = 'Enter Password', name = 'password')
+        div
+            input#inputEmail(type = 'text', placeholder = 'Enter Email', name = 'email')
+        div
+            input#inputFullName(type = 'text', placeholder = 'Enter Full Name', name = 'fullname')
+        div
+            button#btnSubmit(type='submit') Submit
+             
+             
+             
+            
